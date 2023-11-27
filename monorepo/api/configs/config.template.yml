@@ -1,0 +1,23 @@
+server:
+  http:
+    port: "8080"
+
+database:
+  postgres:
+    url: "postgres://wb_admin:1488@localhost:5432/wb_test_task"
+    max_open_conn: 10
+    max_conn_life: 1
+
+cache:
+  redis:
+    address: "127.0.0.1:6379"
+    password: ""
+    ttl_second: 3600
+
+jaeger:
+  service_name: "wb_test_task.api"
+  host: "localhost"
+  port: "4318"
+  environment: "dev"
+  trace_ratio_fraction: 1.0
+  otel_exporter_otlp_endpoint: "http://jaeger:4317"

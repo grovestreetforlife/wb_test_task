@@ -1,0 +1,7 @@
+###
+
+# curl --location 'http://localhost:8080/api/v1/orders/8bd3a843-2c8b-49c5-a75a-16ab94206631'
+GET http://localhost:8080/api/v1/orders/{order_uid}
+
+###
+
